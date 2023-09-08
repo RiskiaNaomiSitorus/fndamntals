@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <h1>Login</h1>
+    <title>Login</title>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="challenges.html">Challenges</a>
+    <a href="contact.html">Contact Us</a>
+  </head>
+  <body>
+    
+    <p><hr garis </p>
+  <style>
+    h1
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      width: 45%;
+      padding: 10px;
+    }
+
+    form fieldset {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    form legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Login</legend>
+        <label for="fname">Email</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Password</label>
+        <input type="password" id="lname" name="lname">
+       <p></p> <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Register</legend>
+        <label for="regName">Nama Lengkap</label>
+        <input type="text" id="regName" name="regName">
+        <label for="regEmail">Email</label>
+        <input type="text" id="regEmail" name="regEmail">
+        <label for="mahasiswa">Pekerjaan</label>
+        <select name="mahasiswa" id="mahasiswa">
+          <optgroup label="Mahasiswa">
+            <option value="Mahasiswa">Mahasiswa</option>
+            <option value="Asisten Dosen">Asisten Dosen</option>
+            <option value="Dosen">Dosen</option>
+          </optgroup>
+        </select>
+        <p><br></p><input type="text" id="regEmail" name="regEmail">
+        <p></p><input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
